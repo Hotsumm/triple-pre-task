@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import GlobalStyles from './styles/GlobalStyles'
 import ContentLogo from './components/ContentLogo'
+import Metrics from './components/Metrics'
+import Awards from './components/Awards'
 
 const App: React.FC = () => {
   return (
@@ -12,6 +14,10 @@ const App: React.FC = () => {
         <Container>
           <Section>
             <ContentLogo />
+            <ContentWrap>
+              <Metrics />
+              <Awards />
+            </ContentWrap>
           </Section>
         </Container>
       </Main>
@@ -37,4 +43,9 @@ const Section = styled.section`
   max-width: 1200px;
   min-width: 1200px;
   margin: 0 auto;
+`
+
+const ContentWrap = styled.div`
+  display: flex;
+  flex-direction: column;
 `
