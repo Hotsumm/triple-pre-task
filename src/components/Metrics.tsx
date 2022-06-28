@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { fadeIn } from '../styles/Animation'
 
 const Metrics: React.FC = () => {
   return (
@@ -22,6 +23,9 @@ export default Metrics
 const Container = styled.div`
   width: 100%;
   margin-bottom: 40px;
+  animation: ${fadeIn} 0.7s ease-in 0.1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 `
 
 const MetricItem = styled.div`

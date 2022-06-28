@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import appStoreBadge from '../assets/badge-apple4x.png'
 import playStoreBadge from '../assets/play-store2x.png'
+import { fadeIn } from '../styles/Animation'
 
 const Awards: React.FC = () => {
   return (
@@ -26,6 +27,9 @@ export default Awards
 
 const Container = styled.div`
   width: 100%;
+  animation: ${fadeIn} 0.7s ease-in 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 `
 
 const Wrapper = styled.div`

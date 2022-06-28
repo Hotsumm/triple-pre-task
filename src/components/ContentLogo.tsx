@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import tripleLogo from '../assets/triple2x.png'
+import { fadeIn } from '../styles/Animation'
 
 const ContentLogo: React.FC = () => {
   return (
@@ -14,6 +15,9 @@ export default ContentLogo
 
 const Container = styled.div`
   width: 100%;
+  animation: ${fadeIn} 0.7s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
 `
 
 const Logo = styled.div`
