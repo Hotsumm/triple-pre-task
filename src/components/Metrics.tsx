@@ -1,19 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import useCountUp from '../hooks/useCountUp'
 import { fadeIn } from '../styles/Animation'
 
 const Metrics: React.FC = () => {
+  const countUser = useCountUp(0, 700, 2000)
+  const countReview = useCountUp(0, 100, 2000)
+  const countPlan = useCountUp(0, 470, 2000)
+
   return (
     <Container>
       <MetricItem>
-        <strong>만 명</strong>의 여행자
+        <strong>{countUser}만 명</strong>의 여행자
       </MetricItem>
       <MetricItem>
-        <strong>만 개</strong>의 여행 리뷰
+        <strong>{countReview}만 개</strong>의 여행 리뷰
       </MetricItem>
       <MetricItem>
-        <strong>만 개</strong>의 여행 일정
+        <strong>{countPlan}만 개</strong>의 여행 일정
       </MetricItem>
     </Container>
   )
