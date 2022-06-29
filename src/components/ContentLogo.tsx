@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import tripleLogo from '../assets/triple2x.png'
 import { fadeIn } from '../styles/Animation'
 

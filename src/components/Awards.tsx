@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import appStoreBadge from '../assets/badge-apple4x.png'
 import playStoreBadge from '../assets/play-store2x.png'
 import { fadeIn } from '../styles/Animation'

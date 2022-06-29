@@ -1,18 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import { fadeIn } from '../styles/Animation'
 
 const Metrics: React.FC = () => {
   return (
     <Container>
       <MetricItem>
-        <strong>만 명</strong>의 사용자
+        <strong>만 명</strong>의 여행자
       </MetricItem>
       <MetricItem>
-        <strong>만 개</strong>의 리뷰
+        <strong>만 개</strong>의 여행 리뷰
       </MetricItem>
       <MetricItem>
-        <strong>만 개</strong>의 저장
+        <strong>만 개</strong>의 여행 일정
       </MetricItem>
     </Container>
   )
