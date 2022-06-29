@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import { easeOutExpo } from '../utils/easeOutExpo'
+
 const useCountUp = (start = 0, end: number, duration: number): number => {
   const [count, setCount] = useState<number>(start)
   const frameDuration = 1000 / 60
@@ -9,7 +11,7 @@ const useCountUp = (start = 0, end: number, duration: number): number => {
     const totalFrames = Math.round(duration / frameDuration)
     const counter = setInterval(() => {
       frame++
-      const progress = frame / totalFrames
+      const progress = easeOutExpo(frame / totalFrames)
       setCount(end * progress)
 
       if (frame === totalFrames) {
