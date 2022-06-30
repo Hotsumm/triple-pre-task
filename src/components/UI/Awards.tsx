@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import appStoreBadge from '../assets/badge-apple4x.png'
-import playStoreBadge from '../assets/play-store2x.png'
-import { fadeIn } from '../styles/Animation'
+import appStoreBadge from '../../assets/badge-apple4x.png'
+import playStoreBadge from '../../assets/play-store2x.png'
+import FadeIn from '../Keyframes/FadeIn'
 
 const Awards: React.FC = () => {
   return (
-    <Container>
-      <Wrapper>
+    <FadeIn delay={0.2}>
+      <Container>
         <AwardItem badge={playStoreBadge}>
           2018 구글 플레이스토어
           <br />
@@ -19,21 +19,14 @@ const Awards: React.FC = () => {
           <br />
           오늘의 여행앱 선정
         </AwardItem>
-      </Wrapper>
-    </Container>
+      </Container>
+    </FadeIn>
   )
 }
 
 export default Awards
 
 const Container = styled.div`
-  width: 100%;
-  animation: ${fadeIn} 0.7s ease-in 0.2s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-`
-
-const Wrapper = styled.div`
   width: 100%;
   display: flex;
   gap: 0 20px;

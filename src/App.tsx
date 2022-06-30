@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 import GlobalStyles from './styles/GlobalStyles'
-import ContentLogo from './components/ContentLogo'
-import Metrics from './components/Metrics'
-import Awards from './components/Awards'
+import ContentLogo from './components/UI/ContentLogo'
+import Metrics from './components/UI/Metrics'
+import Awards from './components/UI/Awards'
 
 const App: React.FC = () => {
   return (
