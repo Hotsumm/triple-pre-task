@@ -9,12 +9,12 @@ const Awards: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <AwardItem badge={appStoreBadge}>
+        <AwardItem badge={playStoreBadge}>
           2018 구글 플레이스토어
           <br />
           올해의 앱 최우수상 수상
         </AwardItem>
-        <AwardItem badge={playStoreBadge}>
+        <AwardItem badge={appStoreBadge}>
           2018 애플 앱스토어
           <br />
           오늘의 여행앱 선정
@@ -52,4 +52,6 @@ const AwardItem = styled.div<{
   padding-left: 65px;
   color: rgba(58, 58, 58, 0.8);
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
 `
