@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# ✈️ Triple pre-task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🧑‍💻 프론트엔드 성열하
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+```bash
+$ yarn
+$ yarn start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙️ Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. React
 
-### `npm test`
+- 필수 스택
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. TypeScript
 
-### `npm run build`
+   한 섹터에 대한 구현 과제였지만, 다른 동료와 협업을 한다는 생각으로 개발하고 싶었습니다.  
+   Typescript로 정적 분석을 통한 type-safe 함이 좋았고, 코드에 대한 가독성 또한 높일 수 있어  
+   이번 Triple pre-task 기술스택으로 사용하게 되었습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. styled-components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   그동안 많은 React 프로젝트에서
+   emotion, styled-components와 같은  
+   Runtime CSS-in-JS 라이브러리를 사용하며 개발해왔습니다.  
+   Runtime에서 스타일 생성하는 개념을 사용하여 이전 동적 스타일링이 불가능한 module css 등과는 다르게  
+   props를 통해 편리한 동적인 스타일링을 할 수 있다는 점이 좋았고  
+   별도의 css 파일을 두어 관리하는 방식이 아니기 때문에 컴포넌트 로직과 분리되지 않아 편한 개발과 함께  
+   스타일을 컴포넌트화시켜 사용하며 재사용 높일 수 있다는 점이 좋았습니다.
